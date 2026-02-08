@@ -1,0 +1,6 @@
+{
+  "frontend/src/App.tsx": "Single-page Valentine's Day surprise component with an evasive \"No\" button that moves on hover/touch and a \"Yes\" button that reveals the uploaded WhatsApp image (showing two people in windows) with a personalized romantic message.",
+  "frontend/src/index.css": "Global styles with romantic pink-themed OKLCH color system for light/dark modes, custom animations for fade-in and slide-in effects, and touch-friendly styling.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with serif font family for romantic typography and maintaining the pink/rose color palette through CSS variables.",
+  "frontend/index.html": "HTML entry point with updated title for the Valentine's Day surprise page."
+}

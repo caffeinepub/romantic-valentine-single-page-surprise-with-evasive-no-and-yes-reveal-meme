@@ -1,0 +1,14 @@
+{
+  "backend/main.mo": "Minimal Motoko canister with an empty actor.",
+  "feature_evidence.json": "Feature evidence report describing a UI update to show a user-uploaded image in App.tsx.",
+  "frontend-file-summaries.txt": "Prewritten summaries of key frontend files including App.tsx, index.css, tailwind config, and HTML entry.",
+  "frontend/index.css": "Tailwind base styles defining OKLCH color variables, theming, and global layout rules.",
+  "frontend/index.html": "HTML entry point loading the React app via main.tsx.",
+  "frontend/src/App.tsx": "Main React component showing a playful Valentine UI with a moving 'No' button and a reveal view displaying a user-uploaded image.",
+  "frontend/src/hooks/useActor.ts": "React hook that creates and manages an authenticated or anonymous backend actor using React Query.",
+  "frontend/src/hooks/useInternetIdentity.ts": "React context and hooks for Internet Identity authentication, managing login state and persistent identities.",
+  "frontend/src/index.css": "Tailwind styles with custom OKLCH color system, animations, and base typography for the app.",
+  "frontend/src/main.tsx": "App entry that initializes React, wraps the app with Internet Identity and React Query providers, and loads global styles.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending colors, fonts, animations, and container settings for the themed UI.",
+  "project_state.json": "Defines the project’s schema, current version, feature list, and architectural notes for a single‑page Valentine web app, including behavior, design, and asset requirements. Contains no code, only project metadata and feature specifications."
+}

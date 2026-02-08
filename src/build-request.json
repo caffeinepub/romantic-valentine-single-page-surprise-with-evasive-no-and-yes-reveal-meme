@@ -1,0 +1,49 @@
+{
+  "kind": "build_request",
+  "title": "Use uploaded image in the Yes-click reveal screen",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-6",
+      "text": "Update the post-“Yes” reveal view to display the user-uploaded image (\"WhatsApp Image 2026-02-07 at 8.14.44 PM.jpeg\") instead of the current static meme image, while keeping the existing reveal message text unchanged.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-3"
+        ],
+        "quotes": [
+          "after he says yes this image should pop up"
+        ]
+      },
+      "acceptanceCriteria": [
+        "When the user clicks the “Yes! 💕” button, the reveal view shows the uploaded image instead of `/assets/generated/valentine-meme.dim_1200x800.png`.",
+        "The reveal message text remains exactly: “you rejected me 11 years ago today for the first time and look at you now wanting to have babies with me 🥰 ”.",
+        "The uploaded image is stored as a static frontend asset and is loaded directly by the frontend (no backend calls).",
+        "The reveal image remains responsive (fits the card width on mobile/iPad/desktop without overflowing) and preserves the existing rounded/shadow styling."
+      ]
+    }
+  ],
+  "constraints": [
+    "Frontend immutable paths must not be edited: `frontend/src/hooks/useInternetIdentity.ts`, `frontend/src/hooks/useInternetIdentity.tsx`, `frontend/src/hooks/useActor.ts`, `frontend/src/main.tsx`, `frontend/src/components/ui`.",
+    "Do not add backend dependencies or implement backend logic for serving the image; the image must be a static frontend asset."
+  ],
+  "nonGoals": [
+    "Changing the Valentine question text or the Yes/No interaction mechanics.",
+    "Adding Internet Identity login or any authentication changes.",
+    "Creating new animations beyond what already exists in the reveal view."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}

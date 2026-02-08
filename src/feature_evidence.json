@@ -1,0 +1,23 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-update-the-post-yes-reveal-view-to-display-the-user-uploaded-image-whatsapp-image-2026-02-07-at-8-14-44-pm-jpeg-instead-of-the-current-static-meme-image-while-keeping-the-existing-reveal-message-text-unchanged",
+      "featureTitle": "Update the post-“Yes” reveal view to display the user-uploaded image (\"WhatsApp Image 2026-02-07 at 8.14.44 PM.jpeg\") instead of the current static meme image, while keeping the existing reveal message text unchanged.",
+      "files": [
+        "frontend/src/App.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

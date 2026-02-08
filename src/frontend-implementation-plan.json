@@ -1,0 +1,29 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Display uploaded image in the Yes-click reveal view",
+  "requirements": [
+    {
+      "id": "REQ-6",
+      "summary": "Swap the reveal view’s meme image for the uploaded WhatsApp image while keeping the reveal message text unchanged and preserving responsive rounded/shadow styling.",
+      "acceptanceCriteria": [
+        "When the user clicks the “Yes! 💕” button, the reveal view shows the uploaded image instead of `/assets/generated/valentine-meme.dim_1200x800.png`.",
+        "The reveal message text remains exactly: “you rejected me 11 years ago today for the first time and look at you now wanting to have babies with me 🥰 ”.",
+        "The uploaded image is stored as a static frontend asset and is loaded directly by the frontend (no backend calls).",
+        "The reveal image remains responsive (fits the card width on mobile/iPad/desktop without overflowing) and preserves the existing rounded/shadow styling."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/public/assets/WhatsApp Image 2026-02-07 at 8.14.44 PM.jpeg",
+          "operation": "create",
+          "description": "Add the uploaded image as a static public asset so it can be referenced directly by the reveal view (no backend calls)."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Update the post-“Yes” reveal view to use the new static asset at `/assets/WhatsApp Image 2026-02-07 at 8.14.44 PM.jpeg` instead of `/assets/generated/valentine-meme.dim_1200x800.png`, while keeping the reveal message text exactly unchanged and ensuring the image remains responsive with the existing rounded/shadow styling."
+        }
+      ]
+    }
+  ]
+}

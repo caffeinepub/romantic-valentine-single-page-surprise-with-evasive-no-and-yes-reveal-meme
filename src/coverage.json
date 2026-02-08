@@ -1,0 +1,39 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-08T01:17:30.366Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 1,
+    "implemented": 1,
+    "items": [
+      {
+        "id": "REQ-6",
+        "summary": "Update the post-“Yes” reveal view to display the user-uploaded image (\"WhatsApp Image 2026-02-07 at 8.14.44 PM.jpeg\") instead of the current static meme image, while keeping the existing reveal message text unchanged.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/public/assets/WhatsApp Image 2026-02-07 at 8.14.44 PM.jpeg",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/App.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "build-template/README.md",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/src/App.tsx",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}
